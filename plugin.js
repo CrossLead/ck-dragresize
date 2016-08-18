@@ -61,6 +61,9 @@
         resizer.hide();
       }
     }
+    editor.on('destroy', function(e) {
+      resizer.hide();
+    });
 
     editor.on('selectionChange', selectionChange);
 
